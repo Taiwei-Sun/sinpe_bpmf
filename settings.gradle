@@ -1,0 +1,2 @@
+rootProject.name = "sinpe_bpmf"
+include ':app'
