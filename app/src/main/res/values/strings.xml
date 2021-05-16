@@ -9,4 +9,51 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="btn_bpmf1">ㄅ</string>
+    <string name="btn_bpmf2">ㄆ</string>
+    <string name="btn_bpmf3">ㄇ</string>
+    <string name="btn_bpmf4">ㄈ</string>
+    <string name="btn_bpmf5">ㄉ</string>
+    <string name="btn_bpmf6">ㄊ</string>
+    <string name="btn_bpmf7">ㄋ</string>
+    <string name="btn_bpmf8">ㄌ</string>
+    <string name="btn_bpmf9">ˇ</string>
+    <string name="btn_bpmf10">ㄍ</string>
+    <string name="btn_bpmf11">ㄎ</string>
+    <string name="btn_bpmf12">ㄏ</string>
+    <string name="btn_bpmf13">ˋ</string>
+    <string name="btn_bpmf14">ㄐ</string>
+    <string name="btn_bpmf15">ㄑ</string>
+    <string name="btn_bpmf16">ㄒ</string>
+    <string name="btn_bpmf17">ㄓ</string>
+    <string name="btn_bpmf18">ㄔ</string>
+    <string name="btn_bpmf19">ㄕ</string>
+    <string name="btn_bpmf20">ㄖ</string>
+    <string name="btn_bpmf21">ˊ</string>
+    <string name="btn_bpmf22">ㄗ</string>
+    <string name="btn_bpmf23">ㄘ</string>
+    <string name="btn_bpmf24">ㄙ</string>
+    <string name="btn_bpmf25">˙</string>
+    <string name="btn_bpmf26">ㄧ</string>
+    <string name="btn_bpmf27">ㄨ</string>
+    <string name="btn_bpmf28">ㄩ</string>
+    <string name="btn_bpmf29">ㄚ</string>
+    <string name="btn_bpmf30">ㄛ</string>
+    <string name="btn_bpmf31">ㄜ</string>
+    <string name="btn_bpmf32">ㄝ</string>
+    <string name="btn_bpmf33">ㄞ</string>
+    <string name="btn_bpmf34">ㄟ</string>
+    <string name="btn_bpmf35">ㄠ</string>
+    <string name="btn_bpmf36">ㄡ</string>
+    <string name="btn_bpmf37">ㄢ</string>
+    <string name="btn_bpmf38">ㄣ</string>
+    <string name="btn_bpmf39">ㄤ</string>
+    <string name="btn_bpmf40">ㄥ</string>
+    <string name="btn_bpmf41">ㄦ</string>
+    <string name="btn_bpmf42">space</string>
+    <string name="btn_bpmf43">back</string>
+    <string name="btn_bpmf44">enter</string>
+
+
+
 </resources>

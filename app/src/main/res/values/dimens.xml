@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn_bpmf">40dp</dimen>
+    <dimen name="btn_bpmf_3times">120dp</dimen>
+    <dimen name="btn_bpmf_gap">1dp</dimen>
 </resources>

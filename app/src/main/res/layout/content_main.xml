@@ -1,19 +1,534 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
+
+    <Button
+        android:id="@+id/btn_bpmf1"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph" />
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <Button
+        android:id="@+id/btn_bpmf2"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf2"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf1" />
+
+    <Button
+        android:id="@+id/btn_bpmf3"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf3"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf2" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf4"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf4"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf3" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf5"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf1"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf1" />
+
+    <Button
+        android:id="@+id/btn_bpmf6"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf6"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf5" />
+
+    <Button
+        android:id="@+id/btn_bpmf7"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf7"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf6" />
+
+    <Button
+        android:id="@+id/btn_bpmf8"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf8"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf7" />
+
+
+
+    <Button
+        android:id="@+id/btn_bpmf9"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf9"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf5"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf5" />
+
+    <Button
+        android:id="@+id/btn_bpmf10"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf10"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf9"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf9" />
+
+    <Button
+        android:id="@+id/btn_bpmf11"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf11"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf9"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf10" />
+
+    <Button
+        android:id="@+id/btn_bpmf12"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf12"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf9"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf11" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf13"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf13"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf9"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf9" />
+
+    <Button
+        android:id="@+id/btn_bpmf14"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf14"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf13"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf13" />
+
+    <Button
+        android:id="@+id/btn_bpmf15"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf15"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf13"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf14" />
+
+    <Button
+        android:id="@+id/btn_bpmf16"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf16"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf13"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf15" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf17"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf17"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf13"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf13" />
+
+    <Button
+        android:id="@+id/btn_bpmf18"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf18"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf17"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf17" />
+
+    <Button
+        android:id="@+id/btn_bpmf19"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf19"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf17"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf18" />
+
+    <Button
+        android:id="@+id/btn_bpmf20"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf20"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf17"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf19" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf21"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf21"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf17"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf17" />
+
+    <Button
+        android:id="@+id/btn_bpmf22"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf22"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf21"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf21" />
+
+    <Button
+        android:id="@+id/btn_bpmf23"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf23"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf21"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf22" />
+
+    <Button
+        android:id="@+id/btn_bpmf24"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf24"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf21"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf23" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf25"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf25"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf29"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf21"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf21" />
+
+    <Button
+        android:id="@+id/btn_bpmf26"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf26"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf25"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf25" />
+
+    <Button
+        android:id="@+id/btn_bpmf27"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf27"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf25"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf26" />
+
+    <Button
+        android:id="@+id/btn_bpmf28"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf28"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf25"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf27" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf29"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf29"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf33"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf25"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf25" />
+
+    <Button
+        android:id="@+id/btn_bpmf30"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf30"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf29"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf29" />
+
+    <Button
+        android:id="@+id/btn_bpmf31"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf31"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf29"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf30" />
+
+    <Button
+        android:id="@+id/btn_bpmf32"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf32"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf29"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf31" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf33"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf33"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bpmf37"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf29"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf29" />
+
+    <Button
+        android:id="@+id/btn_bpmf34"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf34"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf33"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf33" />
+
+    <Button
+        android:id="@+id/btn_bpmf35"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf35"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf33"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf34" />
+
+    <Button
+        android:id="@+id/btn_bpmf36"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf36"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf33"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf35" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf37"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginStart="@dimen/btn_bpmf_gap"
+        android:layout_marginLeft="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bpmf33"
+        app:layout_constraintTop_toTopOf="@+id/btn_bpmf33" />
+
+    <Button
+        android:id="@+id/btn_bpmf38"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf38"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf37"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf37" />
+
+    <Button
+        android:id="@+id/btn_bpmf39"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf39"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf37"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf38" />
+
+    <Button
+        android:id="@+id/btn_bpmf40"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf40"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf37"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf39" />
+
+
+    <Button
+        android:id="@+id/btn_bpmf41"
+        android:layout_width="@dimen/btn_bpmf"
+        android:layout_height="@dimen/btn_bpmf"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf41"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf4" />
+
+    <Button
+        android:id="@+id/btn_bpmf42"
+        android:layout_width="@dimen/btn_bpmf_3times"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf42"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf8" />
+    <Button
+        android:id="@+id/btn_bpmf43"
+        android:layout_width="@dimen/btn_bpmf_3times"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf43"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf17"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf20" />
+    <Button
+        android:id="@+id/btn_bpmf44"
+        android:layout_width="@dimen/btn_bpmf_3times"
+        android:layout_height="@dimen/btn_bpmf"
+        android:layout_marginTop="@dimen/btn_bpmf_gap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_bpmf44"
+        app:layout_constraintStart_toStartOf="@+id/btn_bpmf29"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bpmf32" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
